@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SistemaInfo</string>
+    <string name="user_field_hint">Usuário</string>
+    <string name="password_field_hint">Senha</string>
+    <string name="header_contentDescription">Imagem do cabeçalho da página.</string>
+    <string name="sign_in_button_text">ENTRAR</string>
+    <string name="contact_us_text">Fale conosco</string>
+</resources>

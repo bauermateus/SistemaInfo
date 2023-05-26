@@ -15,6 +15,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:paddingHorizontal="32dp"
         android:src="@drawable/header"
         android:contentDescription="@string/header_contentDescription" />
 

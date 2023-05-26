@@ -3,9 +3,9 @@ package com.mbs.sistemainfo.viewmodels
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.mbs.sistemainfo.data.CustomerEntity
-import com.mbs.sistemainfo.utils.models.CustomerModel
 import com.mbs.sistemainfo.repository.CustomerRepository
 import com.mbs.sistemainfo.utils.formatCpf
+import com.mbs.sistemainfo.utils.models.CustomerModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow

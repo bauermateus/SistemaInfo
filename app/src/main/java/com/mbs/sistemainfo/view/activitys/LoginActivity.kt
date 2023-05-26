@@ -43,7 +43,7 @@ class LoginActivity : AppCompatActivity() {
 
     private fun setupContactUsButton() {
         binding.contactUs.setOnClickListener {
-            val uri = Uri.parse("https://www.sistemainfo.com.br/")
+            val uri = Uri.parse("https://wa.me/+5551995346549/")
             val intent = Intent(Intent.ACTION_VIEW)
             intent.data = uri
             startActivity(intent)

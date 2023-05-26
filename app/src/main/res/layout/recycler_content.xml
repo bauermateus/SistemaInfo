@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:backgroundTint="@color/white"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="nome"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/code_prefix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Código: "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/name" />
+
+            <TextView
+                android:id="@+id/code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="código_valor"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/code_prefix"
+                app:layout_constraintTop_toBottomOf="@+id/name" />
+
+            <TextView
+                android:id="@+id/cpf_prefix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CPF: "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/code" />
+
+            <TextView
+                android:id="@+id/cpf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CPF_valor"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/cpf_prefix"
+                app:layout_constraintTop_toBottomOf="@+id/code" />
+
+            <TextView
+                android:id="@+id/phone_prefix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Telefone: "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cpf" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="telefone_valor"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/phone_prefix"
+                app:layout_constraintTop_toBottomOf="@+id/cpf" />
+
+            <TextView
+                android:id="@+id/address_prefix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Endereço: "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/phone_prefix" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Endereço_valor"
+                android:gravity="start"
+                android:textSize="20sp"
+                android:ellipsize="end"
+                app:layout_constraintStart_toEndOf="@+id/address_prefix"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+            android:id="@+id/delete_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/delete"
+            app:tint="@color/red"
+            android:layout_gravity="top|end"
+            android:layout_margin="8dp"
+            android:contentDescription="@string/delete_user_content_description" />
+    </androidx.cardview.widget.CardView>
+</androidx.appcompat.widget.LinearLayoutCompat>

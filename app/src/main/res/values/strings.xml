@@ -5,4 +5,16 @@
     <string name="header_contentDescription">Imagem do cabeçalho da página.</string>
     <string name="sign_in_button_text">ENTRAR</string>
     <string name="contact_us_text">Fale conosco</string>
+    <string name="nav_header_title">Sistema Info</string>
+    <string name="nav_header_subtitle">exemplo@sistemainfo.com</string>
+    <string name="nav_header_desc">Icone</string>
+
+    <string name="menu_costumer">Clientes</string>
+    <string name="menu_register">Cadastrar</string>
+    <string name="name">Nome (Obrigatório)</string>
+    <string name="cpf">CPF (Somente números, obrigatório)</string>
+    <string name="phone">Telefone (Somente números, opcional)</string>
+    <string name="address">Endereço (Opcional)</string>
+    <string name="register_button_text">Cadastrar</string>
+    <string name="delete_user_content_description">Apagar usuário</string>
 </resources>

@@ -8,6 +8,6 @@ import javax.inject.Inject
 class LoginViewModel @Inject constructor(): ViewModel() {
 
     fun validateLogin(user: String, password: String): Boolean {
-        return user.trim() == "SISTEMA" && password.trim() == "candidato123"
+        return user.trim() == "SISTEMA" && password.trim() == "canditado123"
     }
 }

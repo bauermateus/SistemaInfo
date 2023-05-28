@@ -3,7 +3,7 @@ package com.mbs.sistemainfo.viewmodels
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.mbs.sistemainfo.data.CustomerEntity
-import com.mbs.sistemainfo.repository.CustomerRepository
+import com.mbs.sistemainfo.repository.CustomerRepositoryInterface
 import com.mbs.sistemainfo.utils.formatCpf
 import com.mbs.sistemainfo.utils.models.CustomerModel
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -15,7 +15,7 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class MainViewModel @Inject constructor(private val repository: CustomerRepository) : ViewModel() {
+class MainViewModel @Inject constructor(private val repository: CustomerRepositoryInterface) : ViewModel() {
 
     private val _uiState = MutableStateFlow<List<CustomerModel>>(listOf())
     val uiState = _uiState.asStateFlow()

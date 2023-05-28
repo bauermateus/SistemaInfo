@@ -17,4 +17,19 @@
     <string name="address">Endereço (Opcional)</string>
     <string name="register_button_text">Cadastrar</string>
     <string name="delete_user_content_description">Apagar usuário</string>
+    <string name="cpf_length_warn">CPF deve conter 11 dígitos</string>
+    <string name="name_warn">Por favor, preencha o campo "Nome".</string>
+    <string name="registered_success_text">"cadastrado com sucesso, código "</string>
+    <string name="phone_warn">Telefone deve ser preenchido corretamente: ddd(2 dígitos) + número(9 dígitos), ou então ficar vazio.</string>
+    <string name="invalid_login_text">Combinação usuário/senha inválida.</string>
+    <string name="contact_me_url">https://wa.me/+5551995346549/</string>
+    <string name="code_prefix">Código:</string>
+    <string name="cpf_prefix">CPF:</string>
+    <string name="phone_prefix">Telefone:</string>
+    <string name="address_prefix">Endereço:</string>
+    <string name="name_placeholder">nome</string>
+    <string name="code_placeholder">código_valor</string>
+    <string name="cpf_placeholder">CPF_valor</string>
+    <string name="phone_placeholder">telefone_valor</string>
+    <string name="address_placeholder">Endereço_valor</string>
 </resources>

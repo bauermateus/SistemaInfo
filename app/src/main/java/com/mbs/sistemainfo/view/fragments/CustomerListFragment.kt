@@ -12,7 +12,6 @@ import com.mbs.sistemainfo.utils.listeners.OnCustomersListener
 import com.mbs.sistemainfo.view.adapters.CustomersAdapter
 import com.mbs.sistemainfo.viewmodels.MainViewModel
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
@@ -21,7 +20,6 @@ class CustomerListFragment : Fragment() {
     private var _binding: FragmentCustomerListBinding? = null
     private val binding get() = _binding!!
     private val viewModel: MainViewModel by activityViewModels()
-    private var customersFlowJob: Job? = null
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -37,7 +35,7 @@ class CustomerListFragment : Fragment() {
         val adapter = CustomersAdapter()
         val recyclerView = binding.customerRecyclerView
         recyclerView.adapter = adapter
-        customersFlowJob = lifecycleScope.launch {
+        lifecycleScope.launch {
             viewModel.uiState.collect { customers ->
                 adapter.updateList(customers)
             }
@@ -48,8 +46,6 @@ class CustomerListFragment : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
-        customersFlowJob?.cancel()
-        customersFlowJob = null
     }
 
     private val listener = object: OnCustomersListener {

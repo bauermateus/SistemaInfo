@@ -18,10 +18,11 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/name"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"/>
+            tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -35,11 +36,12 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/cpf"
-            android:inputType="number"
-            android:maxLength="11"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"/>
+            android:inputType="number"
+            android:maxLength="11"
+            tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -53,10 +55,12 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/phone"
-            android:inputType="phone"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"/>
+            android:inputType="phone"
+            android:maxLength="11"
+            tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -66,27 +70,33 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="8dp"
+        app:hintTextColor="@color/green"
+        app:endIconDrawable="@drawable/check_24_green"
+        app:boxStrokeColor="@color/green"
+        app:endIconMode="custom"
         android:hint="@string/address">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/address"
-            android:inputType="text"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"/>
+            android:inputType="text"
+            tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/register_button"
+        style="@style/Widget.Material3.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/light_gray"
         android:text="@string/register_button_text"
-        android:backgroundTint="@color/red"
-        style="@style/Widget.Material3.Button"
         android:textColor="@color/white"
         android:textSize="16sp"
-        android:layout_marginTop="8dp"
-        android:layout_gravity="center_horizontal"/>
+        tools:ignore="TextContrastCheck" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>

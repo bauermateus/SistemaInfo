@@ -11,6 +11,7 @@ abstract class CustomerDatabase : RoomDatabase() {
 
     abstract fun customerDao(): CustomerDao
 
+    // Database Singleton
     companion object {
 
         private var instance: CustomerDatabase? = null

@@ -1,7 +1,6 @@
 package com.mbs.sistemainfo.di
 
 import android.content.Context
-import androidx.room.Room
 import com.mbs.sistemainfo.data.CustomerDao
 import com.mbs.sistemainfo.data.CustomerDatabase
 import dagger.Module

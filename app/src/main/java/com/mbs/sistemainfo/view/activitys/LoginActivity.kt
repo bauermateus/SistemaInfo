@@ -6,6 +6,7 @@ import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.Snackbar
+import com.mbs.sistemainfo.R
 import com.mbs.sistemainfo.viewmodels.LoginViewModel
 import com.mbs.sistemainfo.databinding.ActivityLoginBinding
 import com.mbs.sistemainfo.utils.hideKeyboard
@@ -34,7 +35,7 @@ class LoginActivity : AppCompatActivity() {
                 hideKeyboard(this, binding.root)
                 Snackbar.make(
                     binding.root,
-                    "Combinação usuário/senha inválida.",
+                    getString(R.string.invalid_login_text),
                     Snackbar.LENGTH_SHORT
                 ).show()
             }
@@ -43,7 +44,7 @@ class LoginActivity : AppCompatActivity() {
 
     private fun setupContactUsButton() {
         binding.contactUs.setOnClickListener {
-            val uri = Uri.parse("https://wa.me/+5551995346549/")
+            val uri = Uri.parse(getString(R.string.contact_me_url))
             val intent = Intent(Intent.ACTION_VIEW)
             intent.data = uri
             startActivity(intent)
